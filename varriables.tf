@@ -73,7 +73,7 @@ variable "folder_id_yandex" {
 
 variable "os_disk_size" {
   type        = string
-  default     = "20"
+  default     = "50"
   description = "Size of required vm"
 
 }
@@ -89,21 +89,4 @@ variable "useros" {
   type        = string
   default     = "ubuntu"
   description = "OS native default user"
-}
-
-variable "pg_version" {
-  type        = number
-  default     = 15
-  description = <<EOF
-  Version of the PostgreSQL cluster. 
-  (allowed versions are: 10, 10-1c, 11, 11-1c, 12, 12-1c, 13, 13-1c, 14, 14-1c,**15**)
-  EOF
-}
-
-variable "pg_data_root" {
-  type        = string
-  default     = "/opt/pg_data"
-  description = <<EOF
-  Path to pg_data root folder at APP servers.
-  EOF
 }

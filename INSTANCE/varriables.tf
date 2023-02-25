@@ -23,10 +23,10 @@ variable "folder_id" {
 
 
 
-variable "vm_name_server" {
-  type    = string
-  default = "morsh_server"
-}
+#variable "vm_name_server" {
+#  type    = string
+#  default = "morsh_server"
+#}
 
 variable "prefix" {
   type    = string
@@ -40,14 +40,14 @@ variable "vm_vcpu_type" {
 
 
 variable "vm_vcpu_qty" {
-  type    = string
-  default = "2"
+  type    = number
+  default = 2
 }
 
 
 variable "vm_ram_qty" {
-  type    = string
-  default = "2"
+  type    = number
+  default = 2
 }
 
 
@@ -78,7 +78,11 @@ variable "nat_state" {
   description = "Allow outside access to VM"
 }
 
+variable "adm_pub_key" {
+  type        = string
+  description = "SSH key for access"
 
+}
 #variable "group" {
 #  type    = string
 #  default = "frontend"

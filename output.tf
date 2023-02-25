@@ -11,35 +11,7 @@ output "hostname_vm_1" {
 }
 
 
-output "db_user_password" {
-  value     = data.ansiblevault_path.db_key.value
+output "ssh_ley_server_pub" {
+  value     = data.ansiblevault_path.ssh_server_pub.value
   sensitive = true
-}
-
-output "morsh_pg_cluster_ya_1_id" {
-  value = module.morsh_pg_cluster_ya_1.morsh_yc_id_pg_cluster
-}
-
-output "morsh_pg_cluster_ya_1_host_fqdn" {
-  value = module.morsh_pg_cluster_ya_1.morsh_fqdn_master_pg_cluster
-}
-
-
-output "morsh_pg_cluster_user_ya_1_name" {
-  value = module.morsh_pg_cluster_user_ya_1.morsh_yc_pg_user_name
-}
-
-
-output "morsh_pg_cluster_user_ya_1_id" {
-  value = module.morsh_pg_cluster_user_ya_1.morsh_yc_pg_user_id
-}
-
-
-output "morsh_pg_cluster_db_ya_1_name" {
-  value = module.morsh_pg_cluster_db_ya_1.morsh_yc_pg_db_name
-}
-
-
-output "morsh_pg_cluster_db_ya_1_id" {
-  value = module.morsh_pg_cluster_db_ya_1.morsh_yc_pg_db_id
 }
