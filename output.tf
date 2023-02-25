@@ -11,7 +11,7 @@ output "hostname_vm_1" {
 }
 
 
-output "ssh_ley_server_pub" {
+output "ssh_key_server_pub" {
   value     = data.ansiblevault_path.ssh_server_pub.value
   sensitive = true
 }

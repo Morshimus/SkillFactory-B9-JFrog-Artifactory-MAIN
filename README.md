@@ -56,5 +56,5 @@
 | <a name="output_external_ip_address_vm_1"></a> [external\_ip\_address\_vm\_1](#output\_external\_ip\_address\_vm\_1) | n/a |
 | <a name="output_hostname_vm_1"></a> [hostname\_vm\_1](#output\_hostname\_vm\_1) | n/a |
 | <a name="output_internal_ip_address_vm_1"></a> [internal\_ip\_address\_vm\_1](#output\_internal\_ip\_address\_vm\_1) | n/a |
-| <a name="output_ssh_ley_server_pub"></a> [ssh\_ley\_server\_pub](#output\_ssh\_ley\_server\_pub) | n/a |
+| <a name="output_ssh_key_server_pub"></a> [ssh\_key\_server\_pub](#output\_ssh\_key\_server\_pub) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
