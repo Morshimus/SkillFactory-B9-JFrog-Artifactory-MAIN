@@ -1,4 +1,4 @@
-data "ansiblevault_path" "db_key" {
+data "ansiblevault_path" "ssh_server_pub" {
   path = "${path.module}/secrets"
-  key  = "pg_db_user_password"
+  key  = "adm_pub_key"
 }

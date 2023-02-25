@@ -22,13 +22,14 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [yandex_compute_instance.morsh_bastion](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/compute_instance) | resource |
+| [yandex_compute_instance.morsh_server](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/compute_instance) | resource |
 | [yandex_compute_image.image](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/data-sources/compute_image) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_adm_pub_key"></a> [adm\_pub\_key](#input\_adm\_pub\_key) | SSH key for access | `string` | n/a | yes |
 | <a name="input_cloud_id"></a> [cloud\_id](#input\_cloud\_id) | n/a | `string` | `"b1gm80drf2f2dk70jc3f"` | no |
 | <a name="input_creation_zone_yandex"></a> [creation\_zone\_yandex](#input\_creation\_zone\_yandex) | n/a | `string` | n/a | yes |
 | <a name="input_folder_id"></a> [folder\_id](#input\_folder\_id) | n/a | `string` | `"b1g16ac5if9cnssnhfip"` | no |
@@ -39,8 +40,8 @@ No modules.
 | <a name="input_service_account_key"></a> [service\_account\_key](#input\_service\_account\_key) | n/a | `string` | `"./key.json"` | no |
 | <a name="input_source_image"></a> [source\_image](#input\_source\_image) | n/a | `string` | `"lamp"` | no |
 | <a name="input_vm_name_server"></a> [vm\_name\_server](#input\_vm\_name\_server) | n/a | `string` | `"morsh_server"` | no |
-| <a name="input_vm_ram_qty"></a> [vm\_ram\_qty](#input\_vm\_ram\_qty) | n/a | `string` | `"2"` | no |
-| <a name="input_vm_vcpu_qty"></a> [vm\_vcpu\_qty](#input\_vm\_vcpu\_qty) | n/a | `string` | `"2"` | no |
+| <a name="input_vm_ram_qty"></a> [vm\_ram\_qty](#input\_vm\_ram\_qty) | n/a | `number` | `2` | no |
+| <a name="input_vm_vcpu_qty"></a> [vm\_vcpu\_qty](#input\_vm\_vcpu\_qty) | n/a | `number` | `2` | no |
 | <a name="input_vm_vcpu_type"></a> [vm\_vcpu\_type](#input\_vm\_vcpu\_type) | n/a | `string` | `"standard-v2"` | no |
 | <a name="input_vpc_subnet_id"></a> [vpc\_subnet\_id](#input\_vpc\_subnet\_id) | n/a | `string` | n/a | yes |
 
@@ -48,7 +49,7 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_external_ip_address_morsh_bastion"></a> [external\_ip\_address\_morsh\_bastion](#output\_external\_ip\_address\_morsh\_bastion) | n/a |
-| <a name="output_hostname_morsh_bastion"></a> [hostname\_morsh\_bastion](#output\_hostname\_morsh\_bastion) | n/a |
-| <a name="output_internal_ip_address_morsh_bastion"></a> [internal\_ip\_address\_morsh\_bastion](#output\_internal\_ip\_address\_morsh\_bastion) | n/a |
+| <a name="output_external_ip_address_morsh_server"></a> [external\_ip\_address\_morsh\_server](#output\_external\_ip\_address\_morsh\_server) | n/a |
+| <a name="output_hostname_morsh_server"></a> [hostname\_morsh\_server](#output\_hostname\_morsh\_server) | n/a |
+| <a name="output_internal_ip_address_morsh_server"></a> [internal\_ip\_address\_morsh\_server](#output\_internal\_ip\_address\_morsh\_server) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
