@@ -39,6 +39,7 @@ No modules.
 | <a name="input_prefix"></a> [prefix](#input\_prefix) | n/a | `string` | `"server"` | no |
 | <a name="input_service_account_key"></a> [service\_account\_key](#input\_service\_account\_key) | n/a | `string` | `"./key.json"` | no |
 | <a name="input_source_image"></a> [source\_image](#input\_source\_image) | n/a | `string` | `"lamp"` | no |
+| <a name="input_useros"></a> [useros](#input\_useros) | Default admin user for server | `string` | `"morsh-adm"` | no |
 | <a name="input_vm_ram_qty"></a> [vm\_ram\_qty](#input\_vm\_ram\_qty) | n/a | `number` | `2` | no |
 | <a name="input_vm_vcpu_qty"></a> [vm\_vcpu\_qty](#input\_vm\_vcpu\_qty) | n/a | `number` | `2` | no |
 | <a name="input_vm_vcpu_type"></a> [vm\_vcpu\_type](#input\_vm\_vcpu\_type) | n/a | `string` | `"standard-v2"` | no |

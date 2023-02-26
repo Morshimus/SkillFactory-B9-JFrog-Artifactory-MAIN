@@ -42,6 +42,7 @@ module "morsh_instance_ya_1" {
   vm_vcpu_qty          = 4
   vm_ram_qty           = 4
   adm_pub_key          = data.ansiblevault_path.ssh_server_pub.value
+  useros               = var.useros
 }
 
 resource "local_file" "yc_inventory" {

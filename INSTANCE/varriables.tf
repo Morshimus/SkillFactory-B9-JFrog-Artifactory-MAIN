@@ -88,3 +88,9 @@ variable "adm_pub_key" {
 #  default = "frontend"
 #  description = "Which group of host is it?"
 #}
+
+variable "useros" {
+  type        = string
+  description = "Default admin user for server"
+  default     = "morsh-adm"
+}

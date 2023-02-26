@@ -33,7 +33,7 @@ resource "yandex_compute_instance" "morsh_server" {
   }
 
   metadata = {
-    ssh-keys = "ubuntu:${var.adm_pub_key}"
+    "user-data" : "#cloud-config\nusers:\n  - name: ${var.useros}\n    groups: sudo\n    shell: /bin/bash\n    sudo: ['ALL=(ALL) NOPASSWD:ALL']\n    ssh-authorized-keys:\n      - ${var.adm_pub_key}"
   }
 
   network_interface {
