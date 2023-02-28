@@ -1,4 +1,53 @@
-# lint
+# SkillFactory-B9-JFrog-Artifactory-MAIN
+
+## [Roles](https://github.com/Morshimus/SkillFactory-B9-JFrog-Artifactory-Roles)
+
+## Задание
+* [x] - :one: **Используя Я.Облако, создать виртуальную машину (операционную систему выберите на свое усмотрение, рекомендуемое минимальное количество ресурсов: 4 vCPU, 4GB RAM, 50GB HDD).**
+> Сделана роль Artifactory, также сделан терраформ конфиг. Все работает. 
+
+$${\color{yellow}yandex_cloud.ini}$$
+
+```
+[artifactory]
+morsh-server-centos-7 ansible_host=158.160.53.202 ansible_user=morsh-admin
+
+```
+
+* [x] - :two: Развернуть (используя бесплатный пробный период) Artifactory.
+> Done
+* [x] - :three: Настроить на Artifactory проксирование pip-репозитория pipy.org.
+> Сыллка на прокси PyPi - пароль не буду показывать :smile:
+
+
+$${\color{yellow}pip.ini|pip.conf}$$
+
+```
+[global]
+index-url = http://morsh-repo-user:<key>@158.160.53.202:8081/artifactory/api/pypi/pypi-remote/simple
+```
+
+* [x] - :four: Предоставить разработчикам репозиторий для публикации результатов разработки.
+
+> Сыллка на репозиторий разрабов PyPi. Для setuptools
+
+$${\color{yellow}.pypirc}$$
+
+```
+[private-repository]
+repository: http://158.160.53.202:8081/artifactory/api/pypi/pypi-local
+username: morsh-repo-user
+password: <password>
+```
+*py setup.py sdist upload -r private-repository*
+
+
+* [x] - :five: Отправить ментору конфигурационный файл pip.conf, настроенный для работы с Artifactory в качестве репозитория (вместо стандартного pipy.org), и ссылку на Artifactory, развернутую на вашей машине. Интерфейс должен быть доступен из интернета.
+
+# [MyAwsomeJfrog](http://158.160.53.202:8082)
+
+> Это только начало, инструмент большой, попробую еще установить xray, и настроить все через API. А с заданием считаю справился :smile:
+
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
