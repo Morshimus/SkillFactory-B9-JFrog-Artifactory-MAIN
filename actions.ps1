@@ -127,7 +127,7 @@ function ansiblePlaybook {
         [switch]$secret
     )
 
-    if($secret){$params='-e';$secrets = '@secrets'}
+    if($secret){$params='-e';$secrets = '@secrets.yml'}
 
     if($tagTST){$param='--tags';$tag = "test"}elseif($tagPRD){$param='--tags';$tag = "production"}
 
@@ -144,7 +144,7 @@ function ansibleVault {
         [Parameter(Mandatory=$False,Position=0)]
         [String]$action = 'encrypt',
         [Parameter(Mandatory=$False,Position=0)]
-        [String]$file = 'secrets',
+        [String]$file = 'secrets.yml',
         [Parameter(Mandatory=$False,Position=0)]
         [switch]$ask,
         [Parameter(Mandatory=$False,Position=0)]
