@@ -31,6 +31,8 @@
 | [local_file.yc_inventory](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file) | resource |
 | [yandex_vpc_network.morsh-network](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/vpc_network) | resource |
 | [yandex_vpc_subnet.morsh-subnet-a](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/vpc_subnet) | resource |
+| [ansiblevault_path.jfrog_artifacory_super_user](https://registry.terraform.io/providers/MeilleursAgents/ansiblevault/2.2.0/docs/data-sources/path) | data source |
+| [ansiblevault_path.jfrog_artifacory_super_user_password](https://registry.terraform.io/providers/MeilleursAgents/ansiblevault/2.2.0/docs/data-sources/path) | data source |
 | [ansiblevault_path.ssh_server_pub](https://registry.terraform.io/providers/MeilleursAgents/ansiblevault/2.2.0/docs/data-sources/path) | data source |
 
 ## Inputs
@@ -56,5 +58,7 @@
 | <a name="output_external_ip_address_vm_1"></a> [external\_ip\_address\_vm\_1](#output\_external\_ip\_address\_vm\_1) | n/a |
 | <a name="output_hostname_vm_1"></a> [hostname\_vm\_1](#output\_hostname\_vm\_1) | n/a |
 | <a name="output_internal_ip_address_vm_1"></a> [internal\_ip\_address\_vm\_1](#output\_internal\_ip\_address\_vm\_1) | n/a |
+| <a name="output_jfrog_artifactory_super_admin_password"></a> [jfrog\_artifactory\_super\_admin\_password](#output\_jfrog\_artifactory\_super\_admin\_password) | n/a |
+| <a name="output_jfrog_artifactory_super_admin_user"></a> [jfrog\_artifactory\_super\_admin\_user](#output\_jfrog\_artifactory\_super\_admin\_user) | n/a |
 | <a name="output_ssh_key_server_pub"></a> [ssh\_key\_server\_pub](#output\_ssh\_key\_server\_pub) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
