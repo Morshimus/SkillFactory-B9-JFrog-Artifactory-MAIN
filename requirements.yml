@@ -1,0 +1,4 @@
+---
+- src: https://github.com/Morshimus/SkillFactory-B9-JFrog-Artifactory-Roles
+  name: common
+  scm: git 
